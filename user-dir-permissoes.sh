@@ -26,7 +26,7 @@ echo "Criando os Diretórios e alterando suas permissões"
 for (( i=1; i<${arraylengthdir}+1; i++));
 do
     mkdir ${arraydir[$i-1]}
-    chown root.${arraygrupos[$i-1]}
+    chown root.${arraygrupos[$i-1]} ${arraydir[$i-1]}
     chmod 770 ${arraydir[$i-1]}
 done
 
