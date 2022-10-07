@@ -7,7 +7,7 @@
 #SETAR AS PERMISSÕES DAS PASTAS 
 
 #CRIANDO ARRAYS DE USUÁRIOS, GRUPOS E DIRETÓRIOS
-declare -a arraydir=("/adm" "/ven" "sec")
+declare -a arraydir=("/adm" "/ven" "/sec")
 declare -a arrayuser=("carlos" "maria" "debora" "sebastiana" "josefina" "amanda")
 declare -a arraygrupos=("GRP_ADM" "GRP_VEN" "GRP_SEC")
 
