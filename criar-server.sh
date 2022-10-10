@@ -3,11 +3,8 @@
 echo "Atualizando Repositório Linux & Atualizando pacotes"
 apt-get update -y && apt-get upgrade -y
 
-echo "Instalando Servidor Apache"
-apt-get install -y apache2
-
-echo "Instalando Unzip"
-apt-get install -y unzip
+echo "Instalando Servidor Apache e Unzip"
+apt-get install -y apache2 unzip
 
 echo "Baixando Aplicação no Repositório "
 cd /tmp
