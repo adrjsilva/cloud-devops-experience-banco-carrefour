@@ -15,7 +15,10 @@ wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.z
 unzip main.zip
 
 echo "Copiando APP para o diretório padrão do Apache"
-cp -r /tmp/main/* /var/www/html/
+cp -r /tmp/linux-site-dio-main/* /var/www/html/
+
+echo "Habilitando o Apache"
+systemctl enable apache2
 
 
 
