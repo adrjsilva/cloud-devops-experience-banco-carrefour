@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: php
+  namespace: projeto-backend
+spec:
+  selector:
+    app: php
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql
+  namespace: projeto-backend
+spec:
+  selector:
+    app: mysql
+  ports:
+    - protocol: TCP
+      port: 3306
